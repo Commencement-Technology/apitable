@@ -1102,8 +1102,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       nanoid:
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^5.0.9
+        version: 5.0.9
       next-transpile-modules:
         specifier: ^9.0.0
         version: 9.1.0
@@ -7919,7 +7919,7 @@ packages:
       '@nestjs/common': ^8.1.1
       '@nestjs/core': ^8.1.1
       '@nestjs/event-emitter': ^1.0.0
-      '@nestjs/microservices': 8.1.2
+      '@nestjs/microservices': ^8.1.1
       '@nestjs/schedule': ^1.0.2
       reflect-metadata: ^0.1.13
     dependencies:
@@ -7952,7 +7952,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       eslint: 8.49.0
-      jschardet: 3.1.2
+      jschardet: 3.1.4
       lodash: 4.17.21
       utf8: 3.0.0
     transitivePeerDependencies:
@@ -8217,7 +8217,7 @@ packages:
     requiresBuild: true
     peerDependencies:
       '@nestjs/common': ^8.0.0
-      '@nestjs/microservices': 8.1.2
+      '@nestjs/microservices': ^8.0.0
       '@nestjs/platform-express': ^8.0.0
       '@nestjs/websockets': ^8.0.0
       reflect-metadata: ^0.1.12
@@ -8446,7 +8446,7 @@ packages:
     peerDependencies:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
-      '@nestjs/microservices': 8.1.2
+      '@nestjs/microservices': ^8.0.0
       '@nestjs/platform-express': ^8.0.0
     peerDependenciesMeta:
       '@nestjs/microservices':
@@ -18137,7 +18137,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
-    bundledDependencies: false
 
   /create-react-context@0.3.0(prop-types@15.8.1)(react@16.14.0):
     resolution: {integrity: sha512-dNldIoSuNSvlTJ7slIKC/ZFGKexBMBrrcc+TTe1NdmROnaASuLPvqpwj9v4XS4uXZ8+YPu0sNmShX2rXI5LNsw==}
@@ -21913,7 +21912,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -22185,6 +22184,7 @@ packages:
 
   /glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -25611,8 +25611,8 @@ packages:
   /jsbn@0.1.1:
     resolution: {integrity: sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==}
 
-  /jschardet@3.1.2:
-    resolution: {integrity: sha512-mw3CBZGzW8nUBPYhFU2ztZ/kJ6NClQUQVpyzvFMfznZsoC///ZQ30J2RCUanNsr5yF22LqhgYr/lj807/ZleWA==}
+  /jschardet@3.1.4:
+    resolution: {integrity: sha512-/kmVISmrwVwtyYU40iQUOp3SUPk2dhNCMsZBQX0R1/jZ8maaXJ/oZIzUOiyOqcgtLnETFKYChbJ5iDC/eWmFHg==}
     engines: {node: '>=0.1.90'}
     dev: true
 
@@ -27637,6 +27637,13 @@ packages:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
     hasBin: true
+    dev: true
+
+  /nanoid@5.0.9:
+    resolution: {integrity: sha512-Aooyr6MXU6HpvvWXKoVoXwKMs/KyVakWwg7xQfv5/S/RIgJMy0Ifa45H9qqYy7pTCszrHzP21Uk4PZq2HpEM8Q==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: false
 
   /nanomatch@1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
@@ -32255,7 +32262,6 @@ packages:
       object-assign: 4.1.1
       prop-types: 15.8.1
     dev: true
-    bundledDependencies: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
@@ -37444,9 +37450,9 @@ packages:
       yjs: ^13.3.2
     dependencies:
       lib0: 0.2.85
-      prosemirror-model: registry.npmmirror.com/prosemirror-model@1.19.3
-      prosemirror-state: registry.npmmirror.com/prosemirror-state@1.4.3
-      prosemirror-view: registry.npmmirror.com/prosemirror-view@1.31.8
+      prosemirror-model: 1.19.3
+      prosemirror-state: 1.4.3
+      prosemirror-view: 1.31.8
       y-protocols: 1.0.6(yjs@13.6.8)
       yjs: registry.npmmirror.com/yjs@13.6.8
     dev: false

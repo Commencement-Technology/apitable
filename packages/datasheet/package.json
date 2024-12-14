@@ -130,7 +130,7 @@
     "mime-types": "^2.1.29",
     "moment": "^2.24.0",
     "naming-style": "^1.0.1",
-    "nanoid": "^4.0.2",
+    "nanoid": "^5.0.9",
     "next-transpile-modules": "^9.0.0",
     "next-with-less": "^2.0.5",
     "normalize.css": "8.0.1",
