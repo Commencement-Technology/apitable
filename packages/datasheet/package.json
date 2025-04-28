@@ -141,7 +141,7 @@
     "portfinder": "^1.0.32",
     "posthog-js": "^1.57.2",
     "prettier-plugin-tailwindcss": "^0.4.1",
-    "prismjs": "^1.29.0",
+    "prismjs": "^1.30.0",
     "purify-ts": "^2.0.1",
     "qr-image": "^3.2.0",
     "qrcode": "^1.4.4",
